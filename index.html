@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+
+    <!-- GOOGLE FONTS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <p class="title">AluraGeek</p>
+    </header>
+    <main>
+      <section class="products">
+        <h1 class="products__title">mis productos</h1>
+        <article class="products__container" data-product-list>
+          <h2 class="no__product-title">
+            No hay productos disponibles!! Agrega uno para comenzar.
+          </h2>
+        </article>
+      </section>
+      <section class="add__products">
+        <h2 class="products__title">Agregar Producto</h2>
+        <form action="" class="products__form" data-form>
+          <input
+            class="form-imput"
+            type="text"
+            placeholder="nombre..."
+            name="nombre"
+            data-name
+            required
+          />
+          <input
+            class="form-imput"
+            type="text"
+            placeholder="precio..."
+            name="precio"
+            data-price
+            required
+          />
+          <input
+            class="form-imput"
+            type="text"
+            placeholder="imagen..."
+            name="imagen"
+            data-img
+            required
+          />
+          <article class="buttons__container">
+            <button type="submit" class="form-btn">Enviar</button>
+            <button type="reset" class="form-btn">Limpiar</button>
+          </article>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p class="title">AluraGeek</p>
+      <p class="copyright">Desarrollado por</p>
+      <img src="logo-white.png" alt="" />
+    </footer>
+    <script src="./js/mostrarProductos.js" type="module"></script>
+    <script src="./js/addProduct.js" type="module"></script>
+  </body>
+</html>
